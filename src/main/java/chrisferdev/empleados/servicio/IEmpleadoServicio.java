@@ -7,7 +7,7 @@ import chrisferdev.empleados.modelo.Empleado;
 public interface IEmpleadoServicio {
     public List<Empleado> listarEmpleados();
 
-    public Empleado buscEmpleadoPorId(Integer idEmpleado);
+    public Empleado buscarEmpleadoPorId(Integer idEmpleado);
 
     public void guardarEmpleado(Empleado empleado);
 

@@ -20,7 +20,7 @@ public class EmpleadoServicio implements IEmpleadoServicio{
     }
 
     @Override
-    public Empleado buscEmpleadoPorId(Integer idEmpleado) {
+    public Empleado buscarEmpleadoPorId(Integer idEmpleado) {
         Empleado empleado = empleadoRepositorio.findById(idEmpleado).orElse(null);
         return empleado;
     }
@@ -34,5 +34,5 @@ public class EmpleadoServicio implements IEmpleadoServicio{
     public void eliminarEmpleado(Empleado empleado) {
         empleadoRepositorio.delete(empleado);
     }
-    
+
 }
