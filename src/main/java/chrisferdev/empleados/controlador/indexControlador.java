@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import chrisferdev.empleados.modelo.Empleado;
 import chrisferdev.empleados.servicio.EmpleadoServicio;
-import jakarta.servlet.http.HttpServletRequest;
 
 @Controller
 public class IndexControlador {
@@ -52,5 +51,13 @@ public class IndexControlador {
         modelo.put("empleado", empleado);
         return "editar";//mostrar editar.jsp
     }
+
+    @RequestMapping(value = "/editar", method = RequestMethod.POST) 
+    public String editar(@ModelAttribute("empleadoForma") Empleado empleado){
+        logger.info("Empleado a guardar (editar): " + empleado);
+        empleadoServicio.guardarEmpleado(empleado);
+        return "redirect:/"; //redirigimos al controlador "/"
+    }
+
 }
 
