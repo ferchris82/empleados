@@ -7,6 +7,6 @@ Para el backend con Spring MVC, Spring Data y también utilizando JPA con la imp
 de Hibernate
 
 ![Listado de Empleados](https://github.com/ferchris82/empleados/blob/main/Image1.png)
-![Listado de Empleados](https://github.com/ferchris82/empleados/blob/main/Image2.png)
+![Agregar Empleados](https://github.com/ferchris82/empleados/blob/main/Image2.png)
 
 ¡Gracias por revisar!
